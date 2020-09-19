@@ -1,6 +1,7 @@
 #include<iostream>
 #include<cmath>
 #include<string>
+#include<algorithm> 
 using namespace std;
 class change
 {
@@ -15,11 +16,23 @@ class change
     void calc();
     void hex(int d);
     string res = "";
+    string rever = "";
 };
 void change::choice()
 {
-    cout<<"Convert Decimal to: \n 1.)Binary(Please Enter 2) \n 2.)Hexadecimal(Please Enter 16) \n 3.)Octal(Please Enter 8)"<<endl;
+    cout<<"Convert Decimal to: \n 1.)Binary \n 2.)Hexadecimal \n 3.)Octal"<<endl;
     cin>>ch;
+    switch(ch)
+    {case 1:
+    ch = 2;
+    break;
+    case 2:
+    ch = 16;
+    break;
+    case 3:
+    ch = 8;
+    break;
+    }
     cout<<"Enter number to convert"<<endl;
     cin>>n;
 }
@@ -33,7 +46,7 @@ void change::calc()
     sum += d*(pow(10,c));
     n /= x;
     c++;
-    cout<<"This is iteration count no.: "<<c<<"Current sum: "<<sum<<endl;
+    cout<<"This is iteration count no.: "<<c<<"\t Current sum: "<<sum<<endl;
     }
     cout<<"Result = "<<sum<<endl;
     }
@@ -47,7 +60,7 @@ void change::calc()
      res= res + to_string(d) ;
      n /= x;
     }
-    
+    reverse(res.begin(), res.end());
     cout<<"Result : "<<res<<endl;
     }
 }
