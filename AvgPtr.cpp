@@ -19,5 +19,5 @@ int main()
         ptr++;
     }
     double avg = sum/n;
-    cout<<"Average = "<<avg<<setprecision()endl;
+    cout<<"Average = "<<avg<<setprecision(2)<<endl;
 }
