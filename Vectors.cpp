@@ -148,6 +148,6 @@ int main()
             goto a;
             
 
-        }
+        }break;
     }return 0;
 }
