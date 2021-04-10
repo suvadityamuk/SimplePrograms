@@ -135,12 +135,6 @@ int main()
     t.printNodes(ap);
     cout<<t.depthFirstSearch(ap, "November")<<endl;
     cout<<t.breadthFirstSearch(ap, "Oscar")<<endl;
-    //maine first time aaj suna ki adjacency matrix bolke bhi koi cheez hai
-    //baap re
-    //nahi bhai
-    //mereko dsa nahi aata
-    //bhai maaf kar de mai noob hoon yaar jaane de mereko mai kahaan tere saamne coding kar sakta tu kya bol raha hai yaar
-    //nahi aata mereko dsa
 }
 /*
 
